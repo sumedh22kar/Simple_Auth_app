@@ -29,7 +29,8 @@ const AuthContext = (props) => {
     const logout = () =>{
       setUser(null)
       setIsLoggedIn(false)
-      localStorage.setItem("isLoggedIn", JSON.stringify(false));
+       localStorage.removeItem("isLoggedIn");
+      localStorage.removeItem("user")
     }
     
   return (
