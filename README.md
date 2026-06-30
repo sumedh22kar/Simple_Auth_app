@@ -1,16 +1,107 @@
-# React + Vite
+# React Authentication App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple authentication application built with React. This project demonstrates a basic authentication flow using Context API, React Router, and Local Storage without a backend.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+* Home Page
+* User Registration
+* User Login
+* Protected Dashboard
+* Logout Functionality
+* Context API Authentication
+* Local Storage Session Management
+* Session Persistence After Refresh
+* React Router Navigation
 
-## React Compiler
+## Technologies Used
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+* React
+* React Router DOM
+* Context API
+* JavaScript (ES6)
+* CSS
 
-## Expanding the ESLint configuration
+## Project Structure
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+```text
+src
+│
+├── components
+│   └── ProtectedRoute.jsx
+│
+├── context
+│   └── AuthContext.jsx
+│
+├── pages
+│   ├── Home.jsx
+│   ├── Register.jsx
+│   ├── Login.jsx
+│   └── Dashboard.jsx
+│
+├── App.jsx
+└── main.jsx
+```
+
+## Authentication Flow
+
+```text
+Home
+ │
+ ├── Register
+ │      │
+ │      ▼
+ │   Login
+ │      │
+ │      ▼
+ └── Dashboard
+        │
+        ▼
+      Logout
+        │
+        ▼
+       Home
+```
+
+## Installation
+
+Clone the repository:
+
+```bash
+git clone https://github.com/sumedh22kar/Simple_Auth_app/
+```
+
+Install dependencies:
+
+```bash
+npm install
+```
+
+Start the development server:
+
+```bash
+npm run dev
+```
+
+## Concepts Practiced
+
+* React Components
+* React Hooks
+* Context API
+* React Router
+* Protected Routes
+* Local Storage
+* Authentication Flow
+* State Management
+
+## Future Improvements
+
+* Backend Authentication
+* JWT Authentication
+* Form Validation
+* Password Hashing
+* User Profile Page
+
+## Author
+
+**Sumedh Baviskar**
